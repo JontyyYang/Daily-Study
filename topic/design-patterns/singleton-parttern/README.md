@@ -13,6 +13,7 @@
 
 **场景**
 
-比如登录窗口
+比如登录窗口, 见code-1
 
-https://segmentfault.com/a/1190000013297339
+https://www.cnblogs.com/dengyao-blogs/p/11652566.html
+

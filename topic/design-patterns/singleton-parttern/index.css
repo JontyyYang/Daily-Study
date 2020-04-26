@@ -1,0 +1,13 @@
+.single {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+#testSingle {
+    background: lightblue;
+}
+
+#testSingle2 {
+    background: lightcoral;
+}
