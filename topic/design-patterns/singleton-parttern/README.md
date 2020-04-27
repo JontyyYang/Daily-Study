@@ -13,7 +13,5 @@
 
 **场景**
 
-比如登录窗口, 见code-1
-
-https://www.cnblogs.com/dengyao-blogs/p/11652566.html
-
+1. 比如登录窗口, 见 code-1
+2. 比如线程池，全局缓存， 感觉很像 vue 中的 vuex
