@@ -8,5 +8,18 @@ function Jontyy(name, age) {
   };
 }
 
+// 普通函数和构造函数唯一的区别在于他们的调用方式不同， 当做构造函数，需要用new，this指向新的实例， 当做普通函数， 那么this指向window
+
 var jontyy = new Jontyy("jontyy", 18);
+
 console.log(jontyy);
+
+console.log(jontyy instanceof Object);
+
+console.log(jontyy instanceof Jontyy);
+
+console.log(Jontyy.prototype.constructor === Jontyy);
+
+Jontyy.test = 1;
+
+console.log(Jontyy.prototype.constructor);
