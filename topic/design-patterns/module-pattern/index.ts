@@ -1,7 +1,7 @@
 interface modulePatternReturnType {
-  name:string,
-  publicFunction:()=>void,
-  publicToPrivateFunction:()=>void,
+  name: string,
+    publicFunction: () => void,
+    publicToPrivateFunction: () => void,
 }
 
 const modulePattern = function (): modulePatternReturnType {
@@ -27,6 +27,9 @@ const modulePattern = function (): modulePatternReturnType {
 };
 
 const moduleExample = modulePattern()
+debugger;
 console.log(moduleExample.name);
-moduleExample.publicFunction()
-moduleExample.publicToPrivateFunction()
+moduleExample.publicFunction();
+moduleExample.publicToPrivateFunction();
+
+export {}

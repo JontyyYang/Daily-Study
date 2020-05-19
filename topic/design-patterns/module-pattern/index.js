@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const modulePattern = function () {
     const name = "模块模式";
     function privateFunction() {
@@ -18,6 +19,7 @@ const modulePattern = function () {
     };
 };
 const moduleExample = modulePattern();
+debugger;
 console.log(moduleExample.name);
 moduleExample.publicFunction();
 moduleExample.publicToPrivateFunction();
