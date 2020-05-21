@@ -20,3 +20,5 @@
 1. 在daily-study下 运行tsc，生成js文件
 2. 在对应文件夹下运行 node xxx.js
 
+
+

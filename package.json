@@ -1,0 +1,12 @@
+{
+  "name": "Daily-Study",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/YJD199798/Daily-Study.git",
+  "author": "yangjinda <yangjinda@youzan.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.3"
+  }
+}

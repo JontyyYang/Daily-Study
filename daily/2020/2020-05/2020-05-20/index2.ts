@@ -4,7 +4,8 @@
  * @Description: 
  */
 
-const promise = new Promise((resolve, reject): void => {
+ /** promise 直接执行 */
+const promise =  new Promise((resolve, reject): void => {
   console.log(3);
 
   setTimeout(() => {
@@ -12,8 +13,38 @@ const promise = new Promise((resolve, reject): void => {
   }, 3000);
 }).then((res) => console.log(res));
 
-promise;
+/** 不想直接执行，就放到函数里 */
+const promise2 =  () => {
+ return new Promise((resolve, reject): void => {
+   console.log(33333);
 
+   setTimeout(() => {
+     resolve(111);
+   }, 3000);
+ }).then((res) => console.log(res));
+}
+
+promise2()
+
+/** 删除掉then，用async await代替， 主要是为了证明es6语法都支持 */
+const promise23 = () => {
+  return new Promise((resolve, reject): void => {
+    console.log(33333);
+
+    setTimeout(() => {
+      resolve(111);
+    }, 3000);
+  })
+};
+
+
+const demo = async () => {
+  const data = await promise23()
+  console.log(data)
+}
+
+
+demo()
 // function timeout(ms:number) {
 //   console.log(1)
 //   return new Promise((resolve, reject) => {
