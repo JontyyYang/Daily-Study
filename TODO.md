@@ -5,7 +5,6 @@
 1. 学习设计模式
 https://segmentfault.com/a/1190000013297339
 
-https://segmentfault.com/a/1190000013795390
 
 
 ### 项目类
