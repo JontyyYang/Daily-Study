@@ -18,6 +18,9 @@ _版本中的第 4 位，是由 build 打包产生的，跟数据库中打包记
 ## 2020-05-23
 
 - :feat: 增加简单工厂模式
+- :feat: 增加配置 tslint、prettier 等教程
+- :feat: 迁移 ES6 代码
+- :feat: 迁移 LeetCode 代码
 
 ## 2020-05-20
 

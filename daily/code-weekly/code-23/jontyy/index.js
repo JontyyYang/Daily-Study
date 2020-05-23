@@ -6,3 +6,5 @@ var printNumbers = function (n) {
   }
   return res;
 };
+
+console.log(printNumbers);

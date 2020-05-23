@@ -1,16 +1,16 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+'use strict';
+Object.defineProperty(exports, '__esModule', {value: true});
 const Person = function (name) {
-    this.name = name;
+  this.name = name;
 };
 Person.prototype.eat = function () {
-    return 1;
+  return 1;
 };
 Person.prototype.sing = function () {
-    console.log(this.name + '歌唱中');
+  console.log(this.name + '歌唱中');
 };
 Person.prototype.testBasicType = 1;
-Person.prototype.testObject = { targetKey: "targetKey" };
+Person.prototype.testObject = {targetKey: 'targetKey'};
 const person = new Person('jontyy');
 const person2 = new Person('晨晓');
 console.log(person.eat());
@@ -22,6 +22,6 @@ person.testBasicType = 2;
 console.log(person.testBasicType);
 console.log(person2.testBasicType);
 console.log(person.testObject);
-person.testObject.targetKey = "newKey";
+person.testObject.targetKey = 'newKey';
 console.log(person.testObject);
 console.log(person2.testObject);

@@ -13,9 +13,9 @@ const getSingle = fn => {
 };
 
 const createPopup = () => {
-  const div = document.createElement("div");
-  div.innerHTML = "Login window";
-  div.style.display = "none";
+  const div = document.createElement('div');
+  div.innerHTML = 'Login window';
+  div.style.display = 'none';
   document.body.appendChild(div);
   // 这里返回这个div 是为了 下面的pop.style.display设置属性
   return div;
@@ -24,11 +24,11 @@ const createPopup = () => {
 const createLoginPopup = getSingle(createPopup);
 
 // 下面两个点击就是为了执行这个函数
-document.querySelector("#testSingle").addEventListener("click", () => {
+document.querySelector('#testSingle').addEventListener('click', () => {
   const pop = createLoginPopup();
-  pop.style.display = "block";
+  pop.style.display = 'block';
 });
-document.querySelector("#testSingle2").addEventListener("click", () => {
+document.querySelector('#testSingle2').addEventListener('click', () => {
   const pop = createLoginPopup();
-  pop.style.display = "block";
+  pop.style.display = 'block';
 });

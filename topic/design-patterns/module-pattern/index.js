@@ -1,22 +1,22 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+'use strict';
+Object.defineProperty(exports, '__esModule', {value: true});
 const modulePattern = function () {
-    const name = "模块模式";
-    function privateFunction() {
-        console.log("私有函数", name);
-    }
-    function publicFunction() {
-        console.log("共有函数", name);
-    }
-    function publicToPrivateFunction() {
-        console.log("共有模式调用私有模式", name);
-        privateFunction();
-    }
-    return {
-        name: name,
-        publicFunction,
-        publicToPrivateFunction,
-    };
+  const name = '模块模式';
+  function privateFunction() {
+    console.log('私有函数', name);
+  }
+  function publicFunction() {
+    console.log('共有函数', name);
+  }
+  function publicToPrivateFunction() {
+    console.log('共有模式调用私有模式', name);
+    privateFunction();
+  }
+  return {
+    name: name,
+    publicFunction,
+    publicToPrivateFunction,
+  };
 };
 const moduleExample = modulePattern();
 debugger;

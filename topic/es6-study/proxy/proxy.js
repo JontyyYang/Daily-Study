@@ -244,3 +244,5 @@ try {
 } catch (e) {
   console.log(e);
 }
+
+console.log(double, pow, reverseInt, target, propsKey, args);
