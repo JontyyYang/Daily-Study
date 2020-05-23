@@ -9,25 +9,29 @@ _版本中的第 4 位，是由 build 打包产生的，跟数据库中打包记
 
 ## [Unreleased]
 
-- :feat: 
+- :feat:
 
-- :fix: 
+- :fix:
 
-- :change: 
+- :change:
+
+## 2020-05-23
+
+- :feat: 增加简单工厂模式
 
 ## 2020-05-20
 
-- :feat: 增加ts Debug支持
-- :feat: 增加ts Debug支持方法
+- :feat: 增加 ts Debug 支持
+- :feat: 增加 ts Debug 支持方法
 
 ## 2020-05-20
 
-- :feat: 增加0520 demo，promise的几个小栗子
+- :feat: 增加 0520 demo，promise 的几个小栗子
 
 ## 2020-05-19
 
 - :feat: 增加模块模式
-- :change: 修改README.md
+- :change: 修改 README.md
 
 ## 2020-05-18
 
@@ -36,17 +40,14 @@ _版本中的第 4 位，是由 build 打包产生的，跟数据库中打包记
 
 ## 2020-05-16
 
-- :feat: 增加TS，代码全部TS化。【处理this问题，见原型模式和混合模式】
+- :feat: 增加 TS，代码全部 TS 化。【处理 this 问题，见原型模式和混合模式】
 - :feat: 增加原型模式代码
 - :feat: 增加混合模式代码
 
-##  2020-05-16之前
+## 2020-05-16 之前
 
 - :feat: 增加严格模式相关知识
-- :feat: 增加http cors相关知识
-- :feat: 增加http post和get区别相关知识
+- :feat: 增加 http cors 相关知识
+- :feat: 增加 http post 和 get 区别相关知识
 - :feat: 增加单例模式相关知识
 - :feat: 增加构造函数模式
-
-
-
