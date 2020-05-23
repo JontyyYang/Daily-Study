@@ -1,7 +1,7 @@
 <!--
  * @Author: jontyy
  * @Date: 2020-05-23 14:00:04
- * @Description: 
+ * @Description:
 -->
 
 tslint 相关配置，参照文档
@@ -136,3 +136,5 @@ extends: ['@commitlint/config-conventional'],
 前者用来检查代码是否存在格式问题。后者用来修正代码格式。
 
 [http://www.fly63.com/article/detial/3445](http://www.fly63.com/article/detial/3445)
+
+注意 lint-staged.config 和文档不完全一样，需要删除 linter
