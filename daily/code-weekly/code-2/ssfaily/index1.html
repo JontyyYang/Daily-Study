@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      /**
+       * @param {number[]} nums
+       * @return {number}
+       */
+      // 方法一:计算出newdata中哪个数值最大，则其对应的索引就是出现次数最多的元素
+
+      // var majorityElement = function(nums) {
+      //     var max1=Math.max(...nums);
+      //     var newdata=Array(max1+1).fill(0);
+      //     for(var i=0;i<nums.length;i++){
+      //         newdata[nums[i]]++;
+      //     }
+      //     var max=Math.max(...newdata);
+      //     var indexOfMax=newdata.indexOf(max);
+      //     return max>nums.length/2? indexOfMax:-1;
+      //  };
+      //  console.log(majorityElement(nums));
+
+      // 方法二:先进行排序，排序之后其主要元素应当出现在其中间位置，
+      //        计算出newdata中哪个数值最大，则其对应的索引就是出现次数最多的元素元素出现的最后一个位置减去第一次出现的位置加1，如果大于数组元素的一半，则为主要元素；
+      var majorityElement = function (nums) {
+        nums.sort();
+        var len = nums.length % 2 ? nums.length - 1 : nums.length;
+        var ifmajor = nums[len / 2];
+        return nums.lastIndexOf(ifmajor) - nums.indexOf(ifmajor) + 1 > nums.length / 2
+          ? ifmajor
+          : -1;
+      };
+    </script>
+  </body>
+</html>

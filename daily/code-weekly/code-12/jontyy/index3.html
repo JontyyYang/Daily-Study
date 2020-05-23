@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const firstUniqChar = s => {
+        if (s.length < 1) {
+          return ' ';
+        }
+        let arr = new Array(26).fill(0);
+        for (let item of s) {
+          arr[item.charCodeAt() - 97]++;
+        }
+        for (let item of s) {
+          if (arr[item.charCodeAt() - 97] === 1) {
+            return item;
+          }
+        }
+        return ' ';
+      };
+      // const s = "abaccdeff";
+      // const s = " ";
+      const s = 'leetcode';
+
+      console.log(firstUniqChar(s));
+    </script>
+  </body>
+</html>

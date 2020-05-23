@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * @description: 传入两个数组，判定相同索引下有几个是相同的
+       * @param {number[]} guess
+       * @param {number[]} answer
+       * @return: {number}
+       */
+
+      ///////////////////////////////////////////////////////////////////////////////////////////
+      // 方法一
+
+      //   const game = function(guess, answer) {
+      //     let times = 0;
+      //     //   参数长度有问题
+      //     if (guess.length !== 3 || answer.length !== 3) {
+      //       return -1;
+      //     }
+      //     for (let i = 0; i !== 3; i++) {
+      //       if (guess[i] === answer[i]) {
+      //         times++;
+      //       }
+      //     }
+      //     return times;
+      //   };
+
+      ///////////////////////////////////////////////////////////////////////////////////////////
+      ///////////////////////////////////////////////////////////////////////////////////////////
+
+      // 方法二
+      const game = (guess, answer) => guess.filter((item, index) => item === answer[index]).length;
+    </script>
+  </body>
+</html>

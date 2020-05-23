@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const spiralOrder = matrix => {
+        const longWidth = matrix[0].length,
+          widthWidth = matrix.length;
+        const direction = {
+          leftToRight: 1,
+          topToBottom: 2,
+          rightToLeft: 3,
+          bottomToTop: 4,
+        };
+        let xpos = 0,
+          ypos = 0,
+          total = longWidth * widthWidth,
+          finallArr = [],
+          dir = 1;
+        // total = 9;
+        while (total > 0) {
+          if (dir === direction.leftToRight) {
+            if (ypos !== longWidth - 1) {
+              if (matrix[xpos][ypos] !== -999) {
+                finallArr.push(matrix[xpos][ypos]);
+                matrix[xpos][ypos] = -999;
+                ypos++;
+                total--;
+              } else {
+                xpos++;
+                dir = 2;
+              }
+            } else {
+              finallArr.push(matrix[xpos][ypos]);
+              matrix[xpos][ypos] = -999;
+              xpos++;
+              dir = 2;
+              total--;
+            }
+          }
+          if (dir === direction.topToBottom) {
+            if (xpos !== widthWidth - 1) {
+              if (matrix[xpos][ypos] !== -999) {
+                finallArr.push(matrix[xpos][ypos]);
+                matrix[xpos][ypos] = -999;
+                xpos++;
+                total--;
+              } else {
+                ypos--;
+                dir = 3;
+              }
+            } else {
+              finallArr.push(matrix[xpos][ypos]);
+              matrix[xpos][ypos] = -999;
+              ypos--;
+              dir = 3;
+              total--;
+            }
+          }
+          if (dir === direction.rightToLeft) {
+            if (ypos !== 0) {
+              if (matrix[xpos][ypos] !== -999) {
+                finallArr.push(matrix[xpos][ypos]);
+                matrix[xpos][ypos] = -999;
+                ypos--;
+                total--;
+              } else {
+                dir = 4;
+                ypos--;
+              }
+            } else {
+              finallArr.push(matrix[xpos][ypos]);
+              matrix[xpos][ypos] = -999;
+              dir = 4;
+              total--;
+              xpos--;
+            }
+          }
+          if (dir === direction.bottomToTop) {
+            if (xpos !== 0) {
+              console.log(xpos, ypos, matrix[xpos][ypos]);
+              if (matrix[xpos][ypos] !== -999) {
+                finallArr.push(matrix[xpos][ypos]);
+                matrix[xpos][ypos] = -999;
+                xpos--;
+                total--;
+              } else {
+                dir = 1;
+                ypos++;
+              }
+            } else {
+              if (matrix[xpos][ypos] !== -999) {
+                finallArr.push(matrix[xpos][ypos]);
+                matrix[xpos][ypos] = -999;
+                ypos--;
+                dir = 1;
+                total--;
+              } else {
+                dir = 1;
+                ypos++;
+              }
+            }
+          }
+        }
+        return finallArr;
+      };
+      const matrix = [
+        [1, 2, 3, 4],
+        [5, 6, 7, 8],
+        [9, 10, 11, 12],
+      ];
+      console.log(spiralOrder(matrix));
+    </script>
+  </body>
+</html>

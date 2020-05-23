@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const maxSubArray = nums => {
+        if (!nums.length) {
+          return null;
+        }
+        if (Math.max(...nums) < 0) {
+          return Math.max(...nums);
+        }
+        let maxNum = nums[0],
+          totalNum = nums[0];
+        for (let i = 1; i !== nums.length; i++) {
+          if (totalNum < 0) {
+            totalNum = 0;
+          }
+          totalNum += nums[i];
+          if (totalNum > maxNum) {
+            maxNum = totalNum;
+          }
+        }
+        return maxNum;
+      };
+      nums = [-2, 1];
+      // nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
+      console.log(maxSubArray(nums));
+    </script>
+  </body>
+</html>

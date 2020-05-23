@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let exchange = nums => {
+        let num1 = [],
+          num2 = [];
+        nums.forEach(item => {
+          if (item % 2 === 0) {
+            num1.push(item);
+          } else {
+            num2.push(item);
+          }
+        });
+        // return num2.concat(num1);
+        return [...num2, ...num1];
+      };
+      nums = [1, 2, 3, 4];
+      console.log(exchange(nums));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * @param {string} s
+       * @return {number}
+       */
+
+      const romanArr = [
+        {name: 'I', value: 1},
+        {name: 'V', value: 5},
+        {name: 'X', value: 10},
+        {name: 'L', value: 50},
+        {name: 'C', value: 100},
+        {name: 'D', value: 500},
+        {name: 'M', value: 1000},
+      ];
+
+      const romanToInt = s => {
+        romanArr.forEach(item => {
+          var regExp = new RegExp(item.name, 'g');
+          s = s.replace(regExp, `-${item.value}`);
+        });
+        let totalNum = 0;
+        let finalArr = s.split('-');
+        finalArr.shift();
+        finalArr.forEach((item, index) => {
+          const itemNum = Number.parseInt(item);
+          if (index + 1 < finalArr.length) {
+            const itemNextNum = Number.parseInt(finalArr[index + 1]);
+            if (itemNum < itemNextNum) {
+              totalNum -= itemNum;
+            } else {
+              totalNum += itemNum;
+            }
+          } else {
+            totalNum += itemNum;
+          }
+        });
+        return totalNum;
+      };
+      // romanToInt("MCMXCIV");
+      romanToInt('MCMXCVI');
+
+      // romanToInt("LVIII");
+      // romanToInt("IX");
+      // romanToInt("IV");
+    </script>
+  </body>
+</html>

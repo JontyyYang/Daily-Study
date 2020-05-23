@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const getKthFromEnd = (head, k) => {
+        let totalLen = 0;
+        let node = head;
+        while (node) {
+          totalLen++;
+          node = node.next;
+        }
+        if (k > totalLen) {
+          return null;
+        }
+        node = head;
+        let lastNum = totalLen - k;
+        for (let i = 0; i !== lastNum; i++) {
+          node = node.next;
+        }
+        return node;
+      };
+    </script>
+  </body>
+</html>

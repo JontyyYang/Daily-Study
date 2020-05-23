@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 旋转代码，注意， const必须声明完再使用
+      const rotate = arr => {
+        if (arr.length < 1) {
+          return arr;
+        }
+
+        let len = arr[0].length;
+        let finalArr = [];
+
+        for (let i = len - 1, j = 0; i >= j; i--) {
+          let tempArr = [];
+
+          for (let k = 0; k !== arr.length; k++) {
+            tempArr.push(arr[k][i]);
+          }
+
+          finalArr.push(tempArr);
+        }
+        // 返回旋转之后的数组
+        return finalArr;
+      };
+
+      const spiralOrder = matrix => {
+        if (matrix.length < 1) {
+          return [];
+        }
+        let tempArr = matrix;
+        let matrixTotalLength = matrix.length * matrix[0].length;
+        let finalArr = [];
+        while (matrixTotalLength > 0) {
+          // 抽取第一行
+          let tempLen = tempArr[0].length;
+          finalArr.push(...tempArr.shift());
+          matrixTotalLength = matrixTotalLength - tempLen;
+          // 旋转
+          if (matrixTotalLength > 0) {
+            tempArr = rotate(tempArr);
+          }
+        }
+        return finalArr;
+      };
+
+      // matrix = [
+      //   [1, 2, 3, 4],
+      //   [5, 6, 7, 8],
+      //   [9, 10, 11, 12]
+      // ];
+      matrix = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9],
+      ];
+      console.log(spiralOrder(matrix));
+    </script>
+  </body>
+</html>

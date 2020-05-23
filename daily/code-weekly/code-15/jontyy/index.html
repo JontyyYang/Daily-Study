@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * @param {number[]} prices
+       * @return {number}
+       */
+      const maxProfit = prices => {
+        if (prices.length > 0) {
+          let min = Number.MAX_SAFE_INTEGER;
+          let max = Number.MIN_SAFE_INTEGER;
+          prices.forEach(item => {
+            if (item < min) {
+              min = item;
+            }
+            if (item - min > max) {
+              max = item - min;
+            }
+          });
+          return max;
+        }
+        return 0;
+      };
+      // const proce = [7, 1, 5, 3, 6, 4];
+      const proce = [7, 6, 4, 3, 1];
+      maxProfit(proce);
+    </script>
+  </body>
+</html>

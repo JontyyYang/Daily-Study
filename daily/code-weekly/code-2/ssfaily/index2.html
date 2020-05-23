@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      /**
+       * @param {number[]} nums
+       * @return {number}
+       */
+      // var missingNumber = function(nums) {
+      //   nums.sort(function(a, b) {
+      //     return a - b;
+      //   });
+      //   var lackElement = nums.filter(function(value, index) {
+      //     return index != value;
+      //   });
+      //   var minOfLackElement = Math.min(...lackElement);
+      //   return lackElement.length == 0 ? nums.length : minOfLackElement - 1;
+      // };
+
+      //方法二:计算0~n的和，减去现在的和
+      /**
+       * @param {number[]} nums
+       * @return {number}
+       */
+      var missingNumber = function (nums) {
+        var sum1 = 0,
+          sum2 = 0;
+        var n = nums.length;
+        sum1 = (n * (n + 1)) / 2;
+        nums.forEach(function (value) {
+          sum2 += value;
+        });
+        var minOfLackElement = Math.min(...nums);
+        var maxOfLackElement = Math.max(...nums);
+        return sum1 == sum2
+          ? minOfLackElement == 1
+            ? minOfLackElement - 1
+            : maxOfLackElement + 1
+          : sum1 - sum2;
+      };
+    </script>
+  </body>
+</html>

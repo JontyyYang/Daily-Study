@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const calculateLength = strs => {
+        // 增加一个计算长度的数组
+        // 偶尔用用老代码还是可以的， 没必要非用es6的
+        // let minLength = Math.min(...everyStrLength);
+        const everyStrLength = strs.map(item => item.length),
+          minLength = Math.min.apply(null, everyStrLength),
+          strsLength = strs.length;
+        let result = 0;
+
+        // 出现空字符串直接退出
+        if (minLength === 0) {
+          return 0;
+        }
+
+        // 循环数组每个字符，看是否相等，还特么是双重循环，。这复杂度，， 会不会有问题呀
+        for (let i = 0; i !== minLength; i++) {
+          for (let j = 0; j !== strsLength - 1; j++) {
+            if (j + 1 < strsLength && strs[j][i] !== strs[j + 1][i]) {
+              return i;
+            }
+          }
+        }
+        return minLength;
+      };
+      const longestCommonPrefix = strs => {
+        if (strs.length === 0) {
+          return '';
+        }
+        const length = calculateLength(strs);
+        return strs[0].substr(0, length);
+      };
+      console.log(longestCommonPrefix(['flower', 'flow', 'flight']));
+      console.log(longestCommonPrefix(['dog', 'racecar', 'car']));
+    </script>
+  </body>
+</html>

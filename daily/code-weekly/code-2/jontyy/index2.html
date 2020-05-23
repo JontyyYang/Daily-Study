@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * @param {number[]} nums
+       * @return {number}
+       */
+      // let missingNumber = nums => {
+      //   const length = nums.length;
+      //   let hopeNum = 0,
+      //     currentNum = 0;
+      //   nums.forEach((item, index) => {
+      //     hopeNum += index;
+      //     currentNum += item;
+      //   });
+      //   hopeNum += length;
+      //   return hopeNum - currentNum;
+      // };
+
+      let missingNumber = nums => {
+        let arrnums = nums.sort((a, b) => a - b);
+        for (let [index, item] of Object.entries(arrnums)) {
+          if (Number.parseInt(item) !== Number.parseInt(index)) {
+            return index;
+          }
+        }
+        return arrnums.length;
+      };
+
+      console.log(missingNumber([3, 0, 1]));
+      console.log(missingNumber([9, 6, 4, 2, 3, 5, 7, 0, 1]));
+    </script>
+  </body>
+</html>

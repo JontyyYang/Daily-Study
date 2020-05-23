@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const getKthFromEnd = (head, k) => {
+        // 尾指针先移动k个位置
+        let tail = head;
+        for (let i = 0; i !== k; i++) {
+          // 如果k的大小比长度还大，直接退出
+          if (tail === void 0) {
+            return null;
+          }
+          tail = tail.next;
+        }
+        let first = head;
+        while (tail) {
+          tail = tail.next;
+          first = first.next;
+        }
+        return first;
+      };
+    </script>
+  </body>
+</html>

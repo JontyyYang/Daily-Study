@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * @param {string} s
+       * @return {number}
+       */
+
+      const getVAluse = s => {
+        let returnVAL = 0;
+        switch (s) {
+          case 'I':
+            returnVAL = 1;
+            break;
+          case 'V':
+            returnVAL = 5;
+            break;
+          case 'X':
+            returnVAL = 10;
+            break;
+          case 'L':
+            returnVAL = 50;
+            break;
+          case 'C':
+            returnVAL = 100;
+            break;
+          case 'D':
+            returnVAL = 500;
+            break;
+          case 'M':
+            returnVAL = 1000;
+            break;
+          default:
+            break;
+        }
+        return returnVAL;
+      };
+
+      const romanToInt = s => {
+        const finallArr = s.split('');
+        let totalNum = 0,
+          preNum = getVAluse(finallArr[0]);
+        for (let i = 1, j = finallArr.length; i !== j; i++) {
+          const nextNum = getVAluse(finallArr[i]);
+          if (preNum < nextNum) {
+            totalNum -= preNum;
+          } else {
+            totalNum += preNum;
+          }
+          preNum = nextNum;
+        }
+        totalNum += getVAluse(finallArr[finallArr.length - 1]);
+        return totalNum;
+      };
+      // romanToInt("MCMXCIV");
+      romanToInt('MCMXCVI');
+
+      // romanToInt("LVIII");
+      // romanToInt("IX");
+      // romanToInt("IV");
+    </script>
+  </body>
+</html>

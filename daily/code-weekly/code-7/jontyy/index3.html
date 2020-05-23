@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let exchange = nums => {
+        if (nums.length === (0 || 1)) {
+          return nums;
+        }
+        let slow = 0,
+          fast = 0,
+          length = nums.length;
+        while (fast < length) {
+          if (nums[fast] % 2 === 1) {
+            [nums[slow], nums[fast]] = [nums[fast], nums[slow]];
+            slow++;
+          }
+          fast++;
+        }
+        return nums;
+      };
+      nums = [1, 2, 3, 4];
+      exchange(nums);
+      exchange([]);
+    </script>
+  </body>
+</html>
