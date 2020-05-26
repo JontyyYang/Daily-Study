@@ -19,6 +19,7 @@ const modulePattern = function (): modulePatternReturnType {
     console.log('共有模式调用私有模式', name);
     privateFunction();
   }
+
   return {
     name: name,
     publicFunction,
