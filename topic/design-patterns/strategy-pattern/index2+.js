@@ -1,58 +1,44 @@
-const registerForm = document.getElementById('registerForm');
-
-const strategies = {
-  isNonEmpty: (value: string, errorMsg: string) => {
+var registerForm = document.getElementById('registerForm');
+var strategies = {
+  isNonEmpty: function (value, errorMsg) {
     if (value === '') {
       return errorMsg;
     }
   },
-
-  minLength: (value: string, length: number, errorMsg: string) => {
+  minLength: function (value, length, errorMsg) {
     if (value.length < length) {
       return errorMsg;
     }
   },
-
-  isMobile: (value: string, errorMsg: string) => {
+  isMobile: function (value, errorMsg) {
     if (!/(^1[3|5|8][0-9]{9}$)/.test(value)) {
       return errorMsg;
     }
   },
 };
-
-interface ValidatorType {
-  cache: [];
-  add: (dom: HTMLFormElement, rule: string, errorMsg: string) => string | undefined;
-  start: () => string | undefined;
-}
-
-const Validator = (function (this: ValidatorType) {
+var Validator = function () {
   this.cache = [];
-} as any) as {new (): ValidatorType};
-
-Validator.prototype.add = function (dom: HTMLFormElement, rule: string, errorMsg: string) {
-  const ruleArray = rule.split(':');
-  this.cache.push(() => {
-    const strategy = ruleArray.shift();
-
+};
+Validator.prototype.add = function (dom, rule, errorMsg) {
+  var ruleArray = rule.split(':');
+  this.cache.push(function () {
+    var strategy = ruleArray.shift();
     ruleArray.unshift(dom.value);
     ruleArray.push(errorMsg);
     // @ts-ignore:
     return strategies[strategy].apply(dom, ruleArray);
   });
 };
-
 Validator.prototype.start = function () {
-  let validataFunc;
-  for (let i = 0; (validataFunc = this.cache[i]); i++) {
-    const msg = validataFunc();
+  var validataFunc;
+  for (var i = 0; (validataFunc = this.cache[i]); i++) {
+    var msg = validataFunc();
     if (msg) {
       return msg;
     }
   }
   return undefined;
 };
-
 // 如果需要支持校验多种规则， 只需要把 add的第三个参数去掉， 第二个参数改为数组， 把原来的二三参数放到第二个中， 类似于
 // [
 //   {
@@ -65,20 +51,20 @@ Validator.prototype.start = function () {
 //   },
 // ];
 // 然后在上面add中，一开始就加个循环， 挨个循环处理
-const validataFunc = function () {
-  const validator = new Validator();
+var validataFunc = function () {
+  var validator = new Validator();
   // @ts-ignore:
   validator.add(registerForm.userName, 'isNonEmpty', '用户名不能为空');
   // @ts-ignore:
   validator.add(registerForm.password, 'minLength:6', '密码长度不能少于6 位');
   // @ts-ignore:
   validator.add(registerForm.phoneNumber, 'isMobile', '手机号码格式不正确');
-  const errorMsg = validator.start();
+  var errorMsg = validator.start();
   return errorMsg;
 };
 // @ts-ignore:
 registerForm.onsubmit = function () {
-  const errorMsg = validataFunc(); // 如果errorMsg 有确切的返回值，说明未通过校验
+  var errorMsg = validataFunc(); // 如果errorMsg 有确切的返回值，说明未通过校验
   if (errorMsg) {
     alert(errorMsg);
     return false; // 阻止表单提交

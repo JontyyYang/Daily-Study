@@ -19,6 +19,7 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    '@typescript-eslint/ban-ts-comment': 'off',
     // 如果有不适合的规则，可以在此调整
     // ...
   },
