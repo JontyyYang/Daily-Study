@@ -5,8 +5,6 @@
 格式基于 [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)，
 遵守 [Semantic Versioning](https://semver.org/spec/v2.0.0.html)。
 
-_版本中的第 4 位，是由 build 打包产生的，跟数据库中打包记录关联，不用手动处理。_
-
 ## [Unreleased]
 
 - :feat:
