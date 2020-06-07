@@ -193,9 +193,9 @@
 // console.log(obj instanceof User);
 
 class User {
-  name;
+  name: string;
 
-  constructor(name) {
+  constructor(name: string) {
     this.name = name;
   }
 
@@ -207,7 +207,7 @@ class User {
 class Writer extends User {
   posts = [];
 
-  constructor(name, posts) {
+  constructor(name: string, posts: []) {
     // 必须限制性 super，要不其它命令都不能执行
     super(name);
     this.posts = posts;
@@ -219,3 +219,5 @@ console.log(user instanceof User);
 console.log(user instanceof Writer);
 console.log(user.constructor);
 console.log(user.constructor === Writer);
+
+export {};
