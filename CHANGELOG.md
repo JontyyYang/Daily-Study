@@ -13,6 +13,11 @@
 
 - :change:
 
+## 2020-06-08
+
+- :feat: 初步完成 promise 的相关代码
+- :feat: 增加 async await 简单代码 【第一次出现返回值是 Promise 的】
+
 ## 2020-06-07
 
 - :feat: 增加观察者模式相关代码
@@ -20,6 +25,7 @@
 - :feat: 增加限制返回值为 undefined 的示例，增加返回一个可能为 undefined 的示例【2020-06-07】
 - :feat: 增加 class 相关代码
 - :feat: 增加箭头函数相关代码
+- :feat: 引入@types/node 否则不能正常的引用 node 代码
 
 ## 2020-05-27
 
