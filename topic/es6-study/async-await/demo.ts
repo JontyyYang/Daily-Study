@@ -11,6 +11,7 @@ const delay = (milliseconds: number, count: number): Promise<number> => {
 // 这里返回的promise  void  是指没有返回任何值，没有return
 // 这里返回值不能使void，因为
 // The return type of an async function or method must be the global Promise<T> type.
+// nothing
 const dramaticWelcome = async (): Promise<void> => {
   console.log('Hello');
   for (let i = 0; i !== 5; i++) {
