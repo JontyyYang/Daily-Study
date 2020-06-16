@@ -13,6 +13,10 @@
 
 - :change:
 
+## 2020-06-16
+
+- :feat: 增加 ts 基础代码【6.2 declare，6.3 @types 很有趣】
+
 ## 2020-06-08
 
 - :feat: 初步完成 promise 的相关代码
