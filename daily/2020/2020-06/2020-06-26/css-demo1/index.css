@@ -1,0 +1,29 @@
+@charset "UTF-8";
+.ao,
+.tu {
+  display: inline-block;
+  width: 0;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 35px;
+  color: red;
+}
+
+.ao:before,
+.tu:before {
+  outline: 2px solid blue;
+}
+
+.ao:before {
+  content: 'love 爱 love';
+}
+
+.tu {
+  direction: rtl;
+}
+
+.tu:before {
+  content: '我love你';
+}
+
+/*# sourceMappingURL=index.css.map */
