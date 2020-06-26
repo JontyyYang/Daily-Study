@@ -18,4 +18,9 @@ class jontyy implements jontyyType {
 const jontyyDemo1 = new jontyy('jontyy', 19);
 console.log(jontyyDemo1);
 
+export interface FooType {
+  name: string;
+  age: number;
+}
+
 export {};

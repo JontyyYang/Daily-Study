@@ -13,6 +13,10 @@
 
 - :change:
 
+## 2020-06-20
+
+- :feat: 增加 ts 基础代码,可以看 asserts 里面的 foo1 代码， 利用【key:string】:any 声明一些可能不存在的字段
+
 ## 2020-06-16
 
 - :feat: 增加 ts 基础代码【6.2 declare，6.3 @types 很有趣】
