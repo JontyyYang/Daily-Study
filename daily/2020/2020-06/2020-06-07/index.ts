@@ -21,9 +21,10 @@ function goodFoo(a: number): {a: number; b?: number} {
 }
 console.log(goodFoo(a));
 
-const test = () => {
+const test1 = () => {
   console.log(1);
+  return 1;
 };
 
 // 给出来的建议就是有可能返回undefined的时候，我们可以通过返回类型来控制
-export {foo, goodFoo, test};
+export {foo, goodFoo, test1};

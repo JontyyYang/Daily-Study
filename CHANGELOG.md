@@ -13,6 +13,10 @@
 
 - :change:
 
+## 2020-06-26
+
+- :feat: 增加单测功能，具体见 package.json/jest.config.js 和 jest 目录下文件
+
 ## 2020-06-20
 
 - :feat: 增加 ts 基础代码,可以看 asserts 里面的 foo1 代码， 利用【key:string】:any 声明一些可能不存在的字段
