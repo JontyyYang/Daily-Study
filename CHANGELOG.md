@@ -16,6 +16,8 @@
 ## 2020-06-26
 
 - :feat: 增加单测功能，具体见 package.json/jest.config.js 和 jest 目录下文件
+- :feat: 增加 commitizen
+- :feat: 增加 changelog 打标
 
 ## 2020-06-20
 
