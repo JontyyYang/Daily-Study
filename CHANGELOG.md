@@ -17,6 +17,7 @@
 
 - :feat: 增加算法题两道
 - :feat: 增加新建 code-xxx scripts 代码 执行 yarn leet-code 即可新建文件夹及文件
+- :feat: 增加新建 daily scripts 代码 执行 yarn daily 即可新建文件夹及文件
 
 ## 2020-06-26
 

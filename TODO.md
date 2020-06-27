@@ -5,6 +5,6 @@
 1. 学习设计模式,ByBook
 2. 复习观察者模式和发布订阅模式
 
-### 项目类
+### 蒙忆雪
 
-1. 增加 jest 等到做到通用函数的额时候，引入， 没必要特地引入这个东西
+1. 仿照 scripts 文件夹下其他文件，完成 create-new-daily.ts 的编写,执行 yarn interview 可以生成 interview-xxx.ts 文件

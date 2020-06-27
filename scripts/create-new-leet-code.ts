@@ -2,7 +2,7 @@
 import fs = require('fs');
 import Path = require('path');
 
-const getFileName = (path: string) => {
+const getFileName = (path: string): void => {
   // 因为leet-code的算法题都是以code-数字的，所以我提出所有的名称，组成数组
   const filesName: number[] = [];
   const files = fs.readdirSync(path);

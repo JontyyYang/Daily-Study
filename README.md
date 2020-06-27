@@ -31,9 +31,10 @@
 ## 代码
 
 1. yarn leet-code 新建 leet-code 文件夹和文件。
-2. yarn test 执行单测代码
-3. yarn coverage 获取单测覆盖率生成单测文件
-4. sass 当前目录下文件，将 scss 文件转成 css 文件
-5. tsc 当前目录下文件，将 ts 文件转成 js 文件
-6. ts-node 当前目录下文件，执行该 ts 文件
-7. node 当前目录下文件，执行该 js 文件
+2. yarn daily 新建 daily 文件夹和文件
+3. yarn test 执行单测代码
+4. yarn coverage 获取单测覆盖率生成单测文件
+5. sass 当前目录下文件，将 scss 文件转成 css 文件
+6. tsc 当前目录下文件，将 ts 文件转成 js 文件
+7. ts-node 当前目录下文件，执行该 ts 文件
+8. node 当前目录下文件，执行该 js 文件
