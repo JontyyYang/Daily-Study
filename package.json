@@ -9,7 +9,13 @@
     "lint": "eslint '**/*.{js,ts,tsx}'",
     "format": "eslint --fix '**/*.{js,ts,tsx}'",
     "test": "jest",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "leet-code": "ts-node scripts/create-new-leet-code.ts",
+    "lint-doc": "校验所有的js，ts和tsx文件",
+    "format-doc": "格式化所有的js，ts和tsx文件",
+    "test-doc": "执行单测",
+    "coverage-doc": "获取单测覆盖率",
+    "leet-code-doc": "新建leet-code文件夹和文件"
   },
   "dependencies": {
     "@types/jest": "^26.0.3",

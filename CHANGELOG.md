@@ -13,6 +13,11 @@
 
 - :change:
 
+## 2020-06-27
+
+- :feat: 增加算法题两道
+- :feat: 增加新建 code-xxx scripts 代码 执行 yarn leet-code 即可新建文件夹及文件
+
 ## 2020-06-26
 
 - :feat: 增加单测功能，具体见 package.json/jest.config.js 和 jest 目录下文件
