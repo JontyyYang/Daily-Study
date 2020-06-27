@@ -1,0 +1,26 @@
+const dependenciesVersion = [
+  '@types/jest@^26.0.3',
+  '@types/node@*',
+  '@types/node@^14.0.11',
+  'commitizen@^4.0.3',
+  'commitizen@^4.1.2',
+  'jest@^26.1.0',
+  'ts-jest@^26.1.1',
+  'ts-node@^8.10.1',
+  'typescript@^3.9.3',
+];
+const devDependenciesVersion = [
+  '@commitlint/cli@^8.3.5',
+  '@commitlint/config-conventional@^8.3.4',
+  '@typescript-eslint/eslint-plugin@^3.0.0',
+  '@typescript-eslint/parser@^3.0.0',
+  'cz-conventional-changelog@3.2.0',
+  'cz-conventional-changelog@^3.2.0',
+  'eslint@^7.1.0',
+  'eslint-config-prettier@^6.11.0',
+  'eslint-plugin-prettier@^3.1.3',
+  'husky@^4.2.5',
+  'lint-staged@^10.2.6',
+  'parse-yarn-lock@0.28.4',
+  'prettier@^2.0.5',
+];
