@@ -6,6 +6,8 @@
 
 1. yarn global add typescript
 2. yarn global add ts-node
+3. yarn global add sass
+4. yarn global add commitizen
 
 ## node 版本
 
@@ -25,3 +27,13 @@
 
 1. 在 daily-study 下 运行 tsc 文件名【避免全部文件都生成】，生成 js 文件
 2. 在对应文件夹下运行 node xxx.js
+
+## 代码
+
+1. yarn leet-code 新建 leet-code 文件夹和文件。
+2. yarn test 执行单测代码
+3. yarn coverage 获取单测覆盖率生成单测文件
+4. sass 当前目录下文件，将 scss 文件转成 css 文件
+5. tsc 当前目录下文件，将 ts 文件转成 js 文件
+6. ts-node 当前目录下文件，执行该 ts 文件
+7. node 当前目录下文件，执行该 js 文件
