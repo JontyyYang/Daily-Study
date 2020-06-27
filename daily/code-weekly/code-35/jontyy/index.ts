@@ -26,3 +26,5 @@ const numWays = (n: number, relation: ArrayType[], k: number) => {
 };
 
 console.log(numWays(n, relation, k));
+
+export {};
