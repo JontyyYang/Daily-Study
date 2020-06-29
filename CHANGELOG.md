@@ -13,6 +13,11 @@
 
 - :change:
 
+## 2020-06-29
+
+- :feat: 增加生成 topic 函数，学习 process.argv
+- :feat: 学习 sass 相关内容
+
 ## 2020-06-27
 
 - :feat: 增加算法题两道
