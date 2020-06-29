@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/** 
+  变量名 采取中划线更加合适
+*/
+.container {
+  color: red;
+  background-color: #ccc;
+  height: 100px;
+}
+
+/*# sourceMappingURL=index.css.map */

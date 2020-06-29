@@ -1,0 +1,16 @@
+// 变量可以放在外面，整个scss文件可以用
+/** 
+  变量名 采取中划线更加合适
+*/
+$bg-color: #ccc;
+$height: 100px;
+
+.container {
+  // 变量可以定义在块内，只能在该快作用域使用
+  $color: red;
+  color: $color;
+  background-color: $bg-color;
+  height: $height;
+}
+
+// css群组选择器也是支持嵌套的
