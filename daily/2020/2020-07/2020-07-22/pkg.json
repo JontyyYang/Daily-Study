@@ -1,0 +1,13 @@
+{
+  "clientDevDependencies": {
+    "@youzan/cdn-plugin": "1.0.0",
+    "@youzan/opm": "1.0.0",
+    "@youzan/opm-babel-plugin": "1.0.0",
+    "@youzan/opm-merge-config-plugin": "1.0.0",
+    "@youzan/opm-output-plugin": "1.0.0",
+    "@youzan/opm-sass-plugin": "1.0.0",
+    "@youzan/smart-entry-plugin": "1.0.0",
+    "@youzan/opm-sourcemap-plugin": "1.0.0",
+    "@youzan/opm-hash-plugin": "1.0.1-beta.7"
+  }
+}

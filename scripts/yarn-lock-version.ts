@@ -3,6 +3,7 @@ import fs = require('fs');
 const parse = require('parse-yarn-lock').default;
 const lockfile = fs.readFileSync('yarn.lock').toString();
 const parsed = parse(lockfile);
+
 const {dependencies = {}, devDependencies = {}} = JSON.parse(
   fs.readFileSync('package.json').toString()
 );
