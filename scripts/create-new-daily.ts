@@ -47,6 +47,14 @@ const createFile = (): void => {
       ),
       'cheer up！！！'
     );
+    fs.writeFileSync(
+      path.join(
+        __dirname,
+        '../',
+        `${basicUrl}/${Year}/${Year}-${Month}/${Year}-${Month}-${day}/daily.md`
+      ),
+      ''
+    );
   }
 };
 
