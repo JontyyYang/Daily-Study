@@ -1,11 +1,14 @@
 # TODO
 
-### 学习类
+### Jontyy
 
-1. 学习设计模式,ByBook
-2. 复习观察者模式和发布订阅模式
+- [ ] 制定 OKR
+- [ ] 清空购物车
+- [ ] 捉虫修改
+- [ ] changelog 修改发布
+- [ ] 会员逻辑整理画图
+- [ ] vue 设计模式分享
 
-### 蒙忆雪
+### astron
 
 1. 仿照 scripts 文件夹下其他文件，完成 create-new-daily.ts 的编写,执行 yarn interview 可以生成 interview-xxx.ts 文件
-   123
