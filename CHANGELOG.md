@@ -13,6 +13,39 @@
 
 - :change:
 
+## 2020-07-29
+
+- :feat: daily ，整理新人培训文档
+
+## 2020-07-28
+
+- :feat: 处理 changelog 的逻辑 [processOn](https://www.processon.com/diagraming/5f211b0df346fb5cdcaaed52)
+
+## 2020-07-27
+
+- :feat: 学习 dns
+
+## 2020-07-22
+
+- :feat: 原生实现 isEqual 和 pick 函数
+- :feat: 增加 pkg 版本比对，处理 shared 每次 yarn 需要 make dev 的逻辑
+
+## 2020-07-17
+
+- :feat: 过滤数组中空元素
+
+## 2020-07-10
+
+- :feat: 测试固定高度到不确定高度的滚动效果
+
+## 2020-07-08
+
+- :feat: 增加处理 changelog 的代码。【不打算接入 daily】
+
+## 2020-06-30
+
+- :feat: 学习 cli 教程
+
 ## 2020-06-29
 
 - :feat: 增加生成 topic 函数，学习 process.argv
