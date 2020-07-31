@@ -45,7 +45,7 @@ const createFile = (): void => {
         '../',
         `${basicUrl}/${Year}/${Year}-${Month}/${Year}-${Month}-${day}/index.ts`
       ),
-      'cheer up！！！'
+      'export {}'
     );
     fs.writeFileSync(
       path.join(
