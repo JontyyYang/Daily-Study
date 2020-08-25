@@ -28,3 +28,5 @@ if (fs.existsSync(versionJsonPath)) {
   console.log(list.join(' '));
   fs.writeFileSync(versionJsonPath, JSON.stringify(clientDevDependencies));
 }
+
+export {};
