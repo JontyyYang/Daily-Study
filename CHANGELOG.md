@@ -13,6 +13,15 @@
 
 - :change:
 
+## 2020-09-08
+
+- :feat: 实现一个 splice [index1.ts, index3.ts]
+- :feat: 学习 ts 重载【index2.ts】
+
+## 2020-09-07
+
+- :feat: 写一个 promise.retry
+
 ## 2020-08-25
 
 - :feat: 每隔固定时间输出一个数的方案 【强推 reduce】
