@@ -7,22 +7,22 @@ const getRes = (url: string) => {
   });
 };
 
-const multiRequest = (urls: string[], maxNum: number): any => {
+const multiRequest = (urls: string[], maxNum: number): Promise<Array<string>> => {
   // 执行队列
-  const ret: any[] = [];
+  const ret: Promise<any>[] = [];
   let i = 0,
     resolve: () => void;
 
   const promise = new Promise(r => (resolve = r));
 
   const addTask = () => {
-    console.log(ret);
     if (i >= urls.length) {
       return resolve();
     }
 
     const task = getRes(urls[i++])
       .then(res => {
+        console.log(res);
         return res;
       })
       .finally(() => {
