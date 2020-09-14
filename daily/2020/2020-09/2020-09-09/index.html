@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      .container {
+        width: 600px;
+        height: 300px;
+        display: flex;
+      }
+
+      .left {
+        flex: 1 2 500px;
+        background: red;
+      }
+
+      .right {
+        flex: 2 1 400px;
+        background: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left"></div>
+      <div class="right"></div>
+    </div>
+    <img
+      src="https://camo.githubusercontent.com/306f1f59ba87503684de615e0ca65d88eb7b2553/68747470733a2f2f626c6f672d313235353637373630312e636f7373682e6d7971636c6f75642e636f6d2f626c6f672f323032302d30352d31332d3034303633392e6a7067"
+      alt=""
+    />
+
+    对应题目： 子项溢出空间的宽度为 $500 + 400 - 600 = 300$
+    <br />
+    left 收缩比例：$(500 × 2) ÷ (500 × 2 + 400 × 1) ≈ 0.7143$
+    <br />
+    right 收缩比例：$(400 × 1) ÷ (500 × 2 + 400 × 1) ≈ 0.2857$
+    <br />
+    对应的：
+    <br />
+    left 收缩宽度：$0.7143 × 300 = 214.29$
+    <br />
+    right 收缩宽度：$0.2857 × 300 = 85.71$
+    <br />
+    所以：
+    <br />
+    left 最终宽度：$500 - 214.29 = 285.71$
+    <br />
+    right 最终宽度：$400 - 85.71 = 314.29$
+    <br />
+  </body>
+</html>

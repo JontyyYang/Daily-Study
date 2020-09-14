@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      .container {
+        width: 600px;
+        height: 300px;
+        display: flex;
+      }
+
+      .left {
+        flex: 1 9 300px;
+        background: red;
+      }
+
+      .right {
+        flex: 2 1 200px;
+        background: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left"></div>
+      <div class="right"></div>
+    </div>
+    <div>最后的效果是， 左边的红色宽度是333.3</div>
+    <div>最后的效果是， 右边的蓝色宽度是266.6</div>
+    <div>这里主要是需要理解flex的属性</div>
+    <div>flex的缩写是， flex-grow flex-shrink flex-basis</div>
+    <div>
+      flex-grow是规定项目将相对于其他灵活的项目进行扩展的量， 这里是先分配完，对剩余项目进行分配
+    </div>
+    <div>flex-shrink规定项目将相对于其他灵活的项目进行收缩的量。这里也是先分配完， 在收缩</div>
+    <div>这道题目， 总宽度是600， 先左边分走了300， 右边分走了200， 这是flex-basis处理的</div>
+    <div>然后我们可以发现， 他是可以哟剩余100px的， 所以flex-shrink无效， 主要是flex-grow</div>
+    <div>发现，左边是1， 右边是2 ， 也就是100/3 然后左边33.3 右边66.7</div>
+  </body>
+</html>
