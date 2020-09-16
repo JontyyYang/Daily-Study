@@ -66,5 +66,9 @@
     "skipLibCheck": true /* Skip type checking of declaration files. */,
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
   },
-  "include": ["**/*.ts", "leet-code/code-40/jontyy/index.js"]
+  "include": [
+    "**/*.ts",
+    "leet-code/code-40/jontyy/index.js",
+    "daily/2020/2020-09/2020-09-15/index2.js"
+  ]
 }

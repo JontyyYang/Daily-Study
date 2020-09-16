@@ -30,3 +30,5 @@ const testArray = new myArray(10);
 testArray.fill(0);
 const a = testArray.mySplice(1, 4, 3, 9);
 console.log(a, testArray);
+
+export {};
