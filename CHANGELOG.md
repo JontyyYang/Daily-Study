@@ -13,6 +13,22 @@
 
 - :change:
 
+## 2020-09-16
+
+- :feat: 完成评分 rate 的纯 css 实现， 开心
+- :change: 修改 README 中 sass 文件的生成和实时编译文档
+
+## 2020-09-15
+
+- :feat: 序列化字符串
+- :feat: 实现一个自己的 indexOf， 本质是前后双指针， 或者循环遍历， 或者正则匹配
+
+## 2020-09-09
+
+- :feat: 学习 flex flex-shrink 和 flex-grow
+- :feat: 实现一个批量请求函数 multiRequest(urls, maxNum)
+- :feat: promise.then 测试
+
 ## 2020-09-08
 
 - :feat: 实现一个 splice [index1.ts, index3.ts]

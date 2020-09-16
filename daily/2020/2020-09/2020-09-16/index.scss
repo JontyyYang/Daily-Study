@@ -1,0 +1,19 @@
+.checkbox-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+
+  input {
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+  }
+
+  input[name='rate']:hover::before,
+  input[name='rate']:checked::before,
+  input[name='rate']:checked ~ input[name='rate']::before,
+  input[name='rate']:hover ~ input[name='rate']::before {
+    color: red;
+  }
+}
