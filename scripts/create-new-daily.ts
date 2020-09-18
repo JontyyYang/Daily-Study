@@ -21,40 +21,40 @@ const createFile = (): void => {
     const date = new Date();
     const Year = date.getFullYear();
     const Month = date.getMonth() + 1 > 9 ? date.getMonth() + 1 : `0${date.getMonth() + 1}`;
-
     const day = date.getDate() > 9 ? date.getDate() : `0${date.getDate()}`;
 
     // 查看是否有今年的文件夹，如果没有，新建
+    const YearFolder = `${basicUrl}/${Year}`;
     try {
-      fs.accessSync(`${basicUrl}/${Year}`);
+      fs.accessSync(YearFolder);
     } catch (e) {
-      fs.mkdirSync(path.join(__dirname, '../', `${basicUrl}/${Year}`));
+      fs.mkdirSync(path.join(__dirname, '../', YearFolder));
     }
 
     // 查看是否有当月文件夹，如果没有，新建
+    const MonthFolder = `${basicUrl}/${Year}/${Year}-${Month}`;
     try {
-      fs.accessSync(`${basicUrl}/${Year}/${Year}-${Month}`);
+      fs.accessSync(MonthFolder);
     } catch (e) {
-      fs.mkdirSync(path.join(__dirname, '../', `${basicUrl}/${Year}/${Year}-${Month}`));
+      fs.mkdirSync(path.join(__dirname, '../', MonthFolder));
     }
 
     // 查看是否有当天文件夹，如果没有，新建
-    const folderName = `${basicUrl}/${Year}/${Year}-${Month}/${Year}-${Month}-${day}`;
-
+    const DayFolder = `${basicUrl}/${Year}/${Year}-${Month}/${Year}-${Month}-${day}`;
     try {
-      fs.accessSync(folderName);
+      fs.accessSync(DayFolder);
     } catch (e) {
-      fs.mkdirSync(path.join(__dirname, '../', folderName));
+      fs.mkdirSync(path.join(__dirname, '../', DayFolder));
     }
 
     // 新建对应人的文件夹，以及TODO
     try {
-      fs.accessSync(`${folderName}/${name}`);
+      fs.accessSync(`${DayFolder}/${name}`);
     } catch (e) {
-      fs.mkdirSync(path.join(__dirname, '../', folderName, name));
+      fs.mkdirSync(path.join(__dirname, '../', DayFolder, name));
     }
 
-    const writerName = `${folderName}/${name}`;
+    const writerName = `${DayFolder}/${name}`;
 
     // 查看是否有ts文件，如果有，新增ts文件
     try {
