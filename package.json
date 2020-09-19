@@ -14,14 +14,7 @@
     "daily": "ts-node scripts/create-new-daily.ts",
     "ver": "ts-node scripts/yarn-lock-version.ts",
     "topic": "ts-node scripts/create-new-topic.ts",
-    "lint-doc": "校验所有的js，ts和tsx文件",
-    "format-doc": "格式化所有的js，ts和tsx文件",
-    "test-doc": "执行单测",
-    "coverage-doc": "获取单测覆盖率",
-    "leet-code-doc": "新建leet-code文件夹和文件",
-    "daily-doc": "新建daily文件",
-    "ver-doc": "生成pck的所有依赖",
-    "topic-doc": "新建专题"
+    "question": "ts-node scripts/publish-question.ts"
   },
   "dependencies": {
     "@types/jest": "^26.0.3",

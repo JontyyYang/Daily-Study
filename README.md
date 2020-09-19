@@ -31,14 +31,29 @@
 ## 代码
 
 1. yarn leet-code 新建 leet-code 文件夹和文件。
-2. yarn daily 新建 daily 文件夹和文件
-3. yarn topic = "xxx" 新建 topic 文件
+
+2. yarn daily 新建 daily 文件夹和文件【需要加名字， 需要在 ts 文件中增加自己名字的枚举 如 yarn daily name="jontyy"】
+
+3. yarn topic = "xxx" 新建 topic 文件 【xxx 是 topic 名】
+
 4. yarn ver 生成项目实际依赖的版本文件 【huskyrc 会处理格式问题】
+
 5. yarn test 执行单测代码
+
 6. yarn coverage 获取单测覆盖率生成单测文件
-7. tsc 当前目录下文件，将 ts 文件转成 js 文件
+
+7. tsc 当前目录下文件，将 ts 文件转成 js 文件 【tsc xxx.ts】
+
 8. ts-node 当前目录下文件，执行该 ts 文件
+
 9. node 当前目录下文件，执行该 js 文件
+
 10. sass --watch alert(路劲/你的文件名).scss:alert(转换后的文件名).css
+
 11. sass index.scss index.css --style compressed 或者 expanded
-12.
+
+12. yarn lint 校验所有 js、ts、tsx 文件
+
+13. yarn format 格式化所有 js、ts、tsx 文件
+
+14. yarn question 向企业微信群推送全体消息，同步题目

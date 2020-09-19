@@ -3,6 +3,7 @@ const dependenciesVersion = [
   '@types/lodash@^4.14.158',
   '@types/node@*',
   '@types/node@^14.0.11',
+  'axios@^0.20.0',
   'commitizen@^4.0.3',
   'commitizen@^4.1.2',
   'jest@^26.1.0',
@@ -16,7 +17,7 @@ const dependenciesVersion = [
   'lodash@^4.17.19',
   'ts-jest@^26.1.1',
   'ts-node@^8.10.1',
-  'typescript@^3.9.3',
+  'typescript@^4.0.2',
 ];
 const devDependenciesVersion = [
   '@commitlint/cli@^8.3.5',
