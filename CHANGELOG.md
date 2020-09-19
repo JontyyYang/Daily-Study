@@ -13,6 +13,11 @@
 
 - :change:
 
+## 2020-09-20
+
+- :feat: v-if/v-show/v-html 区别
+- :feat: computed 和 watch 的区别
+
 ## 2020-09-17
 
 - :feat: 增加 0917 学习，两分法就左右边界
