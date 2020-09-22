@@ -13,14 +13,25 @@
 
 - :change:
 
-## 2020-09-20
+## 2020-09-22
+
+- :feat: vscode 增加插件 markLint，本地 setting 增加配置， 配置文件见 markdownLint 插件 Readme[Jontyy]
+- :feat: 了解性能瓶颈的解决方案， 本质是通过 performance 或者 lightHouse 去找到问题，针对资源，代码，等做优化[Jontyy]
+
+## 2020-09-19
+
+- :feat: 增加机器人推送能力，见 publish-question.ts [Jontyy]
+- :change: 修改 README，更加容易看懂 [Jontyy]
+- :fix: 修复错误的 changelog 日期 [Jontyy]
+
+## 2020-09-18
 
 - :feat: v-if/v-show/v-html 区别
 - :feat: computed 和 watch 的区别
 
 ## 2020-09-17
 
-- :feat: 增加 0917 学习，两分法就左右边界
+- :feat: 增加 0917 学习，两分法找左右边界
 - :feat: 学习 loader 和 plugin 的区别
 - :change: 删除多余文案
 - :change: 修改创建日常代码的逻辑
@@ -158,9 +169,6 @@
 
 - :feat: 增加 ts Debug 支持
 - :feat: 增加 ts Debug 支持方法
-
-## 2020-05-20
-
 - :feat: 增加 0520 demo，promise 的几个小栗子
 
 ## 2020-05-19

@@ -8,9 +8,9 @@ const webHookUrl =
 const {question} = JSON.parse(
   fs.readFileSync(path.resolve(__dirname, '../question.json')).toString()
 );
-let questionText = '本周题目是\n';
+let questionText = '冲冲冲！！！\n\n';
 for (const item of question) {
-  const temp = `题目是：${item.title}\n题目地址是：${item.url}\n`;
+  const temp = `题目是：${item.title}\n题目地址是：${item.url}\n\n`;
   questionText += temp;
 }
 questionText += '请本周出题人记得周五定晚上会议室，互相吐槽各自写的代码哦';
@@ -30,6 +30,6 @@ axios
     console.log('成功推送');
   })
   .catch(e => {
-    console.log('err');
+    console.log(e);
     console.log('推送失败');
   });

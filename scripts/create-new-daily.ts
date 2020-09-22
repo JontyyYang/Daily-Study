@@ -61,7 +61,7 @@ const createFile = (): void => {
       fs.accessSync(`${writerName}/index.ts`);
       console.log('已经存在index.ts文件，请手动新建需要的文件');
     } catch (e) {
-      fs.writeFileSync(path.join(__dirname, '../', `${writerName}/index.ts`), 'export {}');
+      fs.writeFileSync(path.join(__dirname, '../', `${writerName}/index.ts`), 'export {};\n');
       fs.writeFileSync(path.join(__dirname, '../', `${writerName}/question.md`), '');
     }
   } else {
