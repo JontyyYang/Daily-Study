@@ -17,6 +17,7 @@
 
 - :feat: vscode 增加插件 markLint，本地 setting 增加配置， 配置文件见 markdownLint 插件 Readme[Jontyy]
 - :feat: 了解性能瓶颈的解决方案， 本质是通过 performance 或者 lightHouse 去找到问题，针对资源，代码，等做优化[Jontyy]
+- :feat: 二进制转字符串， 字符串转二进制， 主要是 String.formCharCode 和 charCodeAt，了解 formCharCode 参数[Jontyy]
 
 ## 2020-09-19
 
