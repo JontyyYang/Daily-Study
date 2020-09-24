@@ -6,7 +6,7 @@
 class User {}
 ```
 
-2.  定义类的另一种方式
+2. 定义类的另一种方式
 
 ```javascript
 const otherUser = class {};
@@ -184,12 +184,12 @@ class User {
   constructor(name) {
     this.#name = name
   }
-	#getName() {
-	  return this.#name
-	}
+ #getName() {
+   return this.#name
+ }
   #outPutName() {
-  	return this.#getName().includes('jo')
-	}
+   return this.#getName().includes('jo')
+ }
 }
 
 const user = new User('jontyy')
