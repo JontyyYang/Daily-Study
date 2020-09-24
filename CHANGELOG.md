@@ -13,6 +13,12 @@
 
 - :change:
 
+## 2020-09-23
+
+- :feat: 增加多种排序方法, 附效率[Jontyy]
+- :feat: 多种方式拆分字符串 [Jontyy]
+- :feat: 循环数组异步的链接[Jontyy]
+
 ## 2020-09-22
 
 - :feat: vscode 增加插件 markLint，本地 setting 增加配置， 配置文件见 markdownLint 插件 Readme[Jontyy]
