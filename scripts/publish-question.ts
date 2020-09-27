@@ -12,9 +12,9 @@ let questionText = '冲冲冲！！！\n\n';
 for (const item of question) {
   let temp = '';
   if (item.url === '') {
-    temp = `题目是：${item.title}\n题目地址是：${item.url}\n\n`;
-  } else {
     temp = `题目是：${item.title}\n题目是：${item.question}\n\n`;
+  } else {
+    temp = `题目是：${item.title}\n题目地址是：${item.url}\n\n`;
   }
   questionText += temp;
 }
