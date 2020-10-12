@@ -10,14 +10,16 @@ const {question} = JSON.parse(
 );
 let questionText = '冲冲冲！！！\n\n';
 for (const item of question) {
+  console.log('item', item);
   let temp = '';
-  if (item.url === '') {
+  if (item.url !== '') {
     temp = `题目是：${item.title}\n题目地址是：${item.url}\n\n`;
   } else {
     temp = `题目是：${item.title}\n题目是：${item.question}\n\n`;
   }
   questionText += temp;
 }
+console.log('questionText', questionText);
 questionText += '请本周出题人记得周五定晚上会议室，互相吐槽各自写的代码哦';
 
 const params = {
