@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #app {
+        /* 设置颜色与渐变方向 */
+        background-image: -webkit-linear-gradient(0deg, red, blue);
+        /* 主要用于剪掉文字以外的区域。 */
+        -webkit-background-clip: text;
+        /* 设置文本的填充颜色。 */
+        -webkit-text-fill-color: transparent;
+        /* 这边需要注意， 不能是块元素， 要不拉的太长， 会导致看不出来，我需要容器和文字宽度是相同的 */
+        display: inline-flex;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p id="app">
+      测试下颜色是否会真的变色
+    </p>
+  </body>
+</html>
