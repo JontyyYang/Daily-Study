@@ -9,6 +9,7 @@ const name = process.argv.slice(2, 3)[0].split('=')[1] as nameType;
 const userNameToFolderName: UserNameToFolderNameType = {
   jontyy: 'jontyy',
   hcy: 'hcy',
+  yujie: 'yujie',
 };
 
 const detect = (name: nameType): boolean => {

@@ -13,6 +13,19 @@
 
 - :change:
 
+## 2020-10-09
+
+- :feat: 增加 vue2.0 双向绑定核心代码 [Jontyy]
+- :feat: 增加文字渐变色能力 [Jontyy]
+- :feat: 增加 npm 发包的流程 [Jontyy]
+
+## 2020-10-04
+
+- :feat: cookie 可以被劫持，token 不会 [Jontyy]
+- :feat: node 包装一层接口的作用 [Jontyy]
+- :feat: 无重复最长子串 [Jontyy]
+- :feat: 数组的一些方法 [Jontyy]
+
 ## 2020-09-23
 
 - :feat: 增加多种排序方法, 附效率 [Jontyy]
