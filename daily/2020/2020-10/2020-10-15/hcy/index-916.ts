@@ -92,3 +92,5 @@ function IpBack(str: string) {
   return s;
 }
 console.log('33', IpBack(s));
+
+export {};
