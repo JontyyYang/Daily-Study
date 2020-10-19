@@ -30,6 +30,7 @@ const defineReactive = (target, key, value) => {
       observerGet(key, value);
       return value;
     },
+
     set(newValue) {
       if (newValue !== value) {
         // 这里是为了处理 直接复制一个对象， 这个新的对象不受监控

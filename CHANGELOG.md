@@ -13,6 +13,11 @@
 
 - :change:
 
+## 2020-10-16
+
+- :feat: 增加 vue2.x 核心方法 [Jontyy]
+- :feat: 增加玉洁题目解答 [Jontyy]
+
 ## 2020-10-09
 
 - :feat: 增加 vue2.0 双向绑定核心代码 [Jontyy]
