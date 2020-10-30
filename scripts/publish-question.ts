@@ -8,7 +8,7 @@ const webHookUrl =
 const {question} = JSON.parse(
   fs.readFileSync(path.resolve(__dirname, '../question.json')).toString()
 );
-let questionText = '冲冲冲！！！\n\n';
+let questionText = '冲冲冲！！！\n\n本周双指针问题哦！！！\n\n';
 for (const item of question) {
   let temp = '';
   if (item.url !== '') {

@@ -74,7 +74,7 @@ function IpBack(str: string) {
   if (str.length < 4) return '无效字符串';
   const s: any[] = [];
   const search = (cur: any[], sub: string) => {
-    // 数组长度等于 4 且组合起来与之前的字符串相等
+    // 数组长度等于 4 且组合起来与之前的字符串相等 即为一种ip可能
     if (cur.length === 4 && cur.join('') === str) {
       s.push(cur.join('.'));
     } else {
@@ -84,6 +84,7 @@ function IpBack(str: string) {
         const tmp = sub.substr(0, i + 1);
         if (+tmp < 256) {
           search(cur.concat([tmp]), sub.substr(i + 1));
+          console.log('cc', cur);
         }
       }
     }

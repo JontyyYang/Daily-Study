@@ -17,10 +17,10 @@ const data = [
   {name: 5},
   {name: 6, hidden: false},
 ];
-function filter(data: any) {
+function Hilter(data: any) {
   return data.map((ele: any) => {
     if (Array.isArray(ele)) {
-      const list = filter(ele);
+      const list = Hilter(ele);
       if (list.length > 0) {
         return list.filter(Boolean);
       }
@@ -31,7 +31,7 @@ function filter(data: any) {
     return null;
   });
 }
-// console.log('11', filter(data));
+console.log('11', Hilter(data));
 
 // 4. https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/
 /**
