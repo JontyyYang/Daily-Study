@@ -6,7 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
   </head>
+
   <body>
+    <div>
+      <div class="van-uploader">
+        <div class="van-uploader__wrapper">
+          <div class="van-uploader__preview">
+            <div class="van-image van-uploader__preview-image">
+              <img
+                src="https://img.yzcdn.cn/vant/leaf.jpg"
+                class="van-image__img"
+                style="object-fit: cover;"
+              />
+            </div>
+          </div>
+          <div class="van-uploader__preview">
+            <div class="van-image van-uploader__preview-image">
+              <img
+                src="https://img.yzcdn.cn/vant/sand.jpg"
+                class="van-image__img"
+                style="object-fit: cover;"
+              />
+            </div>
+            <div class="van-uploader__preview-delete">
+              <i
+                class="van-badge__wrapper van-icon van-icon-cross van-uploader__preview-delete-icon"
+              >
+              </i>
+            </div>
+          </div>
+          <div class="van-uploader__preview">
+            <div class="van-image van-uploader__preview-image" style="width: 120px; height: 120px;">
+              <img
+                src="https://img.yzcdn.cn/vant/tree.jpg"
+                class="van-image__img"
+                style="object-fit: contain;"
+              />
+            </div>
+            <div class="van-uploader__preview-delete">
+              <i
+                class="van-badge__wrapper van-icon van-icon-cross van-uploader__preview-delete-icon"
+              >
+              </i>
+            </div>
+          </div>
+          <div class="van-uploader__upload">
+            <i class="van-badge__wrapper van-icon van-icon-photograph van-uploader__upload-icon">
+            </i>
+            <input type="file" class="van-uploader__input" accept="*" multiple="" />
+          </div>
+        </div>
+      </div>
+    </div>
     <script>
       /**
        * @param {string} s
@@ -14,13 +65,34 @@
        */
 
       const romanArr = [
-        {name: 'I', value: 1},
-        {name: 'V', value: 5},
-        {name: 'X', value: 10},
-        {name: 'L', value: 50},
-        {name: 'C', value: 100},
-        {name: 'D', value: 500},
-        {name: 'M', value: 1000},
+        {
+          name: 'I',
+          value: 1,
+        },
+        {
+          name: 'V',
+          value: 5,
+        },
+        {
+          name: 'X',
+          value: 10,
+        },
+        {
+          name: 'L',
+          value: 50,
+        },
+        {
+          name: 'C',
+          value: 100,
+        },
+        {
+          name: 'D',
+          value: 500,
+        },
+        {
+          name: 'M',
+          value: 1000,
+        },
       ];
 
       const romanToInt = s => {
