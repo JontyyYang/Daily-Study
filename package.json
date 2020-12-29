@@ -14,7 +14,8 @@
     "daily": "ts-node scripts/create-new-daily.ts",
     "ver": "ts-node scripts/yarn-lock-version.ts",
     "topic": "ts-node scripts/create-new-topic.ts",
-    "question": "ts-node scripts/publish-question.ts"
+    "question": "ts-node scripts/publish-question.ts",
+    "interview": "ts-node scripts/create-new-interview.ts"
   },
   "dependencies": {
     "@types/jest": "^26.0.3",
