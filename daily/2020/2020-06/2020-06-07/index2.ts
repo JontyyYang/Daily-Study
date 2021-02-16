@@ -13,4 +13,5 @@ function goodToInt(str: string): {valid: boolean; int?: number} {
   }
 }
 
+export {};
 // 使用null是不太好的想法

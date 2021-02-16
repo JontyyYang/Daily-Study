@@ -2,7 +2,7 @@ const newPromise = () => {
   return new Promise(res => {
     setTimeout(() => {
       console.log('test');
-      res();
+      res(1);
     }, 1000);
   });
 };

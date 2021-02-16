@@ -40,7 +40,7 @@ const result = findSpace(['hi num', 'test']);
 
 console.log(result);
 
-// exanple
+// example
 // react-redux的connect方法，就是使用了柯里化增加代码的可读性:
 
 // let Container = connect(mapStateToProps, mapDispatchToProps)(Component);

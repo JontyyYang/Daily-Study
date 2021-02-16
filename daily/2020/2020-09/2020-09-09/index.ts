@@ -14,6 +14,7 @@ const multiRequest = (urls: string[], maxNum: number): Promise<Array<string>> =>
     resolve: () => void;
 
   const promise = new Promise(r => (resolve = r));
+  // const promise = Promise.resolve();
 
   const addTask = () => {
     if (i >= urls.length) {

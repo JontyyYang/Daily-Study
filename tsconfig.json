@@ -69,6 +69,7 @@
   "include": [
     "**/*.ts",
     "leet-code/code-40/jontyy/index.js",
-    "daily/2020/2020-09/2020-09-15/index2.js"
+    "daily/2020/2020-09/2020-09-15/index2.js",
+    "daily/2021/2021-01/2021-01-30/jontyy/index.js"
   ]
 }

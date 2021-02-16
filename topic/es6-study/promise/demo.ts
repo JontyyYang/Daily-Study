@@ -44,7 +44,7 @@ const promise2 = new Promise((resolve, reject) => {
 const delay = (time: number) => {
   new Promise(resolve =>
     setTimeout(() => {
-      resolve();
+      resolve(1);
       console.log('jotnyy');
     }, time)
   );

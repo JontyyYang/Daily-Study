@@ -15,8 +15,3 @@ const proxy = (param: any) => {
     },
   });
 };
-
-const test = proxy(obj);
-
-test.name;
-test.age = 3;

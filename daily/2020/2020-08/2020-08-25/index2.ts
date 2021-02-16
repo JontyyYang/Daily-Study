@@ -1,5 +1,3 @@
-import {resolve} from 'path';
-
 const list: number[] = [4, 5, 6];
 
 const add = (x: number): Promise<number> => {
